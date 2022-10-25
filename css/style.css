@@ -1,0 +1,305 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+main {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ecf0f3;
+}
+
+.title {
+    font-size: 38px;
+    font-weight: 600;
+    color: rgb(47, 46, 46);
+    text-align: center;
+    padding: 30px 0px 0px 0px;
+    text-transform: uppercase;
+}
+
+section {
+    min-height: calc(100vh - 75px);
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    min-width: 30%;
+    min-height: 30vh;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 20px #cbcde1,
+        -12px -12px 20px rgb(244, 243, 243);
+}
+
+.display #input {
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    background-color: #ecf0f3;
+    padding: .2em .4em;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 12px #cbcde1,
+        inset -8px -8px 12px rgb(244, 243, 243);
+}
+
+.btns {
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btns .row button {
+    width: 90px;
+    height: 40px;
+    background-color: #fff;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.735);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px #00000020,
+        -5px -5px 8px rgb(244, 243, 243);
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+.btns .row button:hover {
+    background-color: rgb(247, 245, 245);
+}
+
+.btns .row button:active {
+    box-shadow: 1px 1px 2px #00000020,
+        -1px -1px 2px rgb(244, 243, 243);
+}
+
+.equal-btn {
+    background-color: #33ccff !important;
+    color: #fff !important;
+    box-shadow: inset 5px 5px 8px #66d9ff,
+        inset -5px -5px 8px #00ace6,
+        5px 5px 8px #00000020,
+        -5px -5px 8px rgb(244, 243, 243) !important;
+}
+
+.equal-btn:hover {
+    background-color: #33ccfff2 !important;
+}
+
+.equal-btn:active {
+    box-shadow: inset 1px 1px 2px #66d9ff,
+        inset -1px -1px 2px #00ace6,
+        1px 1px 2px #00000020,
+        -1px -1px 2px rgb(244, 243, 243) !important;
+}
+
+.clear {
+    background-color: rgba(51, 204, 51, 0.845) !important;
+    color: #fff !important;
+}
+
+.clear:hover {
+    background-color: rgb(50, 163, 50) !important;
+}
+
+.backspace {
+    background-color: rgba(220, 20, 60, 0.84) !important;
+    color: #fff !important;
+}
+
+.backspace:hover {
+    background-color: rgb(208, 86, 111) !important;
+}
+
+
+@media (max-width:1550px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media (max-width:1400px) {
+    .container {
+        width: 55%;
+    }
+}
+
+@media (max-width:1274px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media (max-width:1166px) {
+    .container {
+        width: 65%;
+    }
+}
+
+@media (max-width:1068px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width:998px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media (max-width:926px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width:865px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media (max-width:815px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width:778px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width:729px) {
+    .btns .row button {
+        width: 85px;
+        margin: 7px;
+    }
+}
+
+@media (max-width:687px) {
+    .btns .row button {
+        width: 80px;
+        margin: 6px;
+    }
+}
+
+@media (max-width:687px) {
+    .btns .row button {
+        width: 75px;
+        margin: 5px;
+    }
+}
+
+@media (max-width:597px) {
+    .btns .row button {
+        width: 70px;
+    }
+}
+
+@media (max-width:565px) {
+    .btns .row button {
+        width: 65px;
+    }
+}
+
+@media (max-width:537px) {
+    .btns .row button {
+        width: 60px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:501px) {
+    .btns .row button {
+        width: 55px;
+        margin: 4px;
+    }
+}
+
+@media (max-width:457px) {
+    .btns .row button {
+        width: 50px;
+    }
+}
+
+@media (max-width:426px) {
+    .btns .row button {
+        width: 45px;
+    }
+}
+
+@media (max-width:394px) {
+    .btns .row button {
+        width: 40px;
+    }
+}
+
+@media (max-width:362px) {
+    .btns .row button {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:337px) {
+    .btns .row button {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+@media (max-width:324px) {
+    .btns .row button {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+
+.changeColor {
+    background-color: rgba(79, 78, 78, 0.397);
+}
+
+.dark{
+    position: fixed;
+    top: 40px;
+    left: 30px;
+    font-size: 20px;
+    outline: none;
+    background-color: transparent;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+@media (max-width:376px) {
+    .dark{
+        top: 42px;
+        left: 15px;
+        font-size: 20px;
+    }
+}
