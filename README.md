@@ -6,6 +6,8 @@
 
 2. CSS
 
+3. Media query for mobile responsive
+
 3. JavaScript
 
 ### Demo image:
